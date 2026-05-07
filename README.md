@@ -108,8 +108,8 @@ CC BY-NC 4.0.
 
 ##  🔗 Links 
 
-*  Live Demo:  (Coming soon) \[Insert your GitHub Pages link here\]*  
-*  Prototype:  (Coming soon)\[Insert your Itch.io link here\]*
+*  Live Demo:  (Coming soon) 
+*  Prototype:  (Coming soon)
 
 ---
 
