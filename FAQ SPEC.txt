@@ -1,0 +1,104 @@
+
+SPEC - FREQUENTLY ASKED QUESTION
+Andrea Turel Caccese
+
+What is SPEC:
+
+
+SPEC is a custom UI/interaction layer for SugarCube that replaces standard link-based navigation with a viewport system and contextual actions.
+It allows multiple interactions within a single passage, integrates inventory, and handles visuals directly via CSS and standard image assets.
+
+What SPEC stands for:
+
+SPEC stands for:
+
+S – Sight (directional gaze)
+P – Perception (environment feedback)
+E – Exploration (spatial discovery)
+C – Control (interaction / outcome)
+
+
+
+
+Why did you build it?
+Standard Twine navigation (links and passages) can feel abstract and discontinuous.
+SPEC is designed to shift the experience from “jumping between nodes” to “looking around and interacting with a space”, then make an action.
+
+
+
+Can it handle complex scenes?
+Yes. SPEC is designed to allow multiple interactions within a single passage, reducing the need for constant passage switching.
+
+
+What kind of assets does it support?
+It works with standard web assets (PNG, JPG) and does not require external rendering engines.
+All visual behavior is handled via CSS and layout logic.
+
+
+Is it only for games?
+No. While it is suitable for interactive fiction, it can also be used for:
+
+narrative experiences on websites
+interactive storytelling for companies or presentations
+visual, guided content exploration
+
+
+
+Does this still “feel like Twine”?
+That’s an open question.
+
+SPEC intentionally moves away from traditional link-based interaction toward a more spatial and visual approach.
+The goal is to increase immersion and reduce “dead time” caused by frequent passage transitions or large blocks of text.
+
+
+Standard Twine navigation (links/passages) feels too abstract for what I’m building.
+I wanted something closer to “looking around” rather than “jumping between nodes”.
+
+
+What does SPEC do?
+At its core, SPEC provides:
+
+- a responsive viewport (16:9, adaptable to other ratios like 9:16 or 2:3)
+- horizontal and vertical panning across scenes
+- four-directional navigation (left/right/up/down)
+- a contextual action button that appears only when something is interactable
+
+
+What features are currently implemented?
+
+- full UI replacement (no default Twine interface and canvas)
+- CRT-style and animations on text and buttons
+- image-based panorama (flexbox + transform)
+- focus system (highlighting objects in view)
+- fatigue effects (blur, delayed transitions)
+- inventory system (grid-based, separate module)
+- support for long-form text via custom macros (e.g. dialogocut / testocut)ons)
+- inventory grid (separate system)
+
+
+Still missing:
+
+- proper state management
+- cleaner macro integration
+- mobile behavior is partially fixed but not fully tested
+
+
+
+
+
+
+Questions:
+
+
+Does this kind of navigation still “feel like Twine” or does it break expectations?
+- This integration is a new approach of how to design stories based on what you see on the screen, it's a way to be more immersive in the story, avoiding dead timing or wall of text.
+
+
+
+
+
+
+“Experimenting with a directional UI system in Twine (SPEC engine)”
+“Replacing passage navigation with a viewport system in Twine (WIP)”
+
+

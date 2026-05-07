@@ -1,0 +1,372 @@
+SPEC FRAMEWORK – DESIGN DOCUMENT v0.1
+
+Author: Turel Caccese
+Engine: Twine (SugarCube)
+Type: Perception-based interaction system
+
+---
+
+1. OVERVIEW
+
+SPEC is a perception-driven interaction framework built on top of Twine (SugarCube).
+
+Instead of traditional verb-based systems (e.g. “look”, “use”, “talk”), SPEC replaces interaction with:
+
+* viewpoint movement
+* attention (focus over time)
+* contextual symbol-based input
+
+The player does not select actions.
+The player observes.
+
+Interaction emerges from attention.
+
+---
+
+2. CORE PRINCIPLE
+
+SPEC is based on the following loop:
+
+LOOK → FOCUS → UNLOCK → INTERACT
+
+Actions are not immediately available.
+They appear only after the player engages with the environment.
+
+---
+
+3. SPEC MEANING
+
+SPEC stands for:
+
+S – Sight (directional gaze)
+P – Perception (environment feedback)
+E – Exploration (spatial discovery)
+C – Control (interaction / outcome)
+
+---
+
+4. INPUT SYSTEM (SYMBOLIC)
+
+SPEC replaces text commands with symbolic input.
+
+Base navigation:
+
+◄ → look left
+► → look right
+▲ → look up
+▼ → look down
+
+Contextual symbols:
+
+◯ → interaction (unlocked)
+⬤ → strong interaction / confirmed state
+◐ ◑ → peripheral focus indicators
+
+Symbols are NOT always visible.
+They appear depending on context and player behavior.
+
+---
+
+5. MODES (CONTEXTUAL INPUT LAYER)
+
+The interface changes depending on the current mode.
+
+MODES:
+
+* NAVIGATION
+* INTERACTION
+* DIALOGUE
+* INVENTORY
+
+Example:
+
+Navigation mode:
+◄ ▲ ◐ ◯ ◑ ▼ ►
+
+Variants (Dialogue, Head controls
+
+◄ ▲ • ▼ ► ↴ ↗ ⬢
+◄ ▲ • ↴ ⊚  ▼  ►  
+◄ ▲ ◐ ◯ ◑ ▼ ►  
+◄ ▲ ◐ (◯) ◑  ▼  ►  
+
+
+
+The system adapts to the situation instead of remaining static.
+
+---
+
+6. FOCUS-BASED INTERACTION
+
+Interactions require sustained attention.
+
+The player must:
+
+1. Look at a specific element
+2. Hold the gaze for a short time
+3. Unlock the interaction
+
+States:
+
+IDLE → LOOKING → FOCUS → INTERACTION AVAILABLE
+
+Example:
+
+Looking at rear-view mirror:
+
+* no action available at first
+* after 1–2 seconds → ◯ appears
+* player can interact
+
+This creates immersion and intentionality.
+
+---
+
+7. TEMPORAL ACTIVATION
+
+Time is a core mechanic.
+
+Interaction is not binary.
+It is progressive.
+
+Example:
+
+0–500 ms → nothing
+500–1000 ms → subtle feedback
+1000+ ms → interaction unlocked
+
+UI elements should:
+
+* fade in
+* increase visibility
+* become “active”
+
+---
+
+8. EXPLORATION-GATED INTERACTION
+
+Some interactions require full spatial exploration.
+
+Example system:
+
+Player must look in all directions:
+
+LEFT → visited
+UP → visited
+RIGHT → visited
+DOWN → visited
+
+Only after all are visited:
+
+→ ◯ becomes available
+
+This prevents premature interaction and forces awareness.
+
+---
+
+9. UI BEHAVIOR
+
+UI is not static.
+
+Buttons:
+
+* appear gradually
+* respond to focus
+* disappear when not relevant
+
+Interaction symbol (◯):
+
+* hidden by default
+* appears only when conditions are met
+* may change (◯ → ⬤) depending on context
+
+---
+
+10. HUB SYSTEM
+
+SPEC uses a HUB-based structure instead of traditional passage flow.
+
+The HUB:
+
+* manages viewport position
+* updates UI dynamically
+* tracks player state
+* controls interaction availability
+
+This allows real-time interaction instead of discrete navigation.
+
+---
+
+11. VIEWPORT SYSTEM
+
+Scenes are built using:
+
+* large images (e.g. 1600px width)
+* smaller viewport (e.g. 800px)
+
+Camera movement is simulated via CSS translation.
+
+Example:
+
+* look left → shift viewport
+* look right → shift viewport
+* look up → reveal new area
+
+---
+
+12. DESIGN GOALS
+
+SPEC aims to:
+
+* remove explicit commands
+* encourage observation
+* slow down interaction
+* create tension and immersion
+
+The player learns by watching, not by clicking menus.
+
+---
+
+13. PLAYER EXPERIENCE
+
+The player gradually understands:
+
+* “If I look carefully, something happens”
+* “If I explore everything, new options appear”
+
+This creates:
+
+* curiosity
+* tension
+* engagement
+
+---
+
+14. RULESET (SPEC v0.1)
+
+15. Actions are not always visible
+
+16. Focus unlocks interaction
+
+17. Exploration may be required
+
+18. UI adapts to context
+
+19. Time is part of interaction
+
+20. Symbols replace verbs
+
+---
+
+15. DEMO STRUCTURE
+
+Recommended demo:
+
+SCENE 1 – Car (basic navigation)
+
+* left/right movement
+* mirror interaction (focus-based)
+
+SCENE 2 – Extended car view
+
+* multiple focus points
+
+SCENE 3 – “Suora” (exploration-gated)
+
+* must look all directions
+* unlock interaction only after full scan
+
+---
+
+16. LICENSE
+
+Free for non-commercial use.
+
+Commercial use requires explicit permission.
+
+Contact: [your email]
+
+---
+END
+---
+
+
+---
+Technical Brochure Framework:
+---
+
+
+# SPEC Framework (Twine / SugarCube)
+
+SPEC is a perception-based interaction framework for Twine (SugarCube).
+
+It replaces traditional verb-based systems (like SCUMM) with a symbolic interface based on player gaze and spatial awareness.
+
+---
+
+## Core Concept
+
+SPEC stands for:
+
+- **S**ight (looking direction)
+- **P**erception (sensory feedback)
+- **E**xploration (environment scanning)
+- **C**ontrol (interaction / state change)
+
+The player does not "choose actions" from a list, but instead **moves their point of view**.
+
+---
+
+## Features
+
+- Dynamic viewport (camera simulation via CSS)
+- Symbol-based interface (no text commands)
+- Split-screen navigation using large images
+- Blink engine (time-based transitions)
+- Modular scene system (HUB + SCENE logic)
+
+---
+
+## Example Interaction
+
+Instead of:
+
+> "Look at mirror"
+
+The player presses:
+
+▲ → looks up → triggers perception
+
+---
+
+## Architecture
+
+The system is built around:
+
+- `SPEC Scene` → visual state
+- `SPEC Hub` → interaction logic
+- `Viewport` → camera simulation
+- `Input Layer` → symbolic buttons
+
+---
+
+◄ ▲ • ▼ ► ↴ ↗ ⬢
+◄ ▲ • ↴ ⊚  ▼  ►  
+◄ ▲ ◐ ◯ ◑ ▼ ►  
+◄ ▲ ◐ (◯) ◑  ▼  ►  
+
+---
+
+## Demo
+
+👉 https://turelcaccese.github.io/testtullio/
+
+---
+
+## License
+
+Free for non-commercial use.
+
+Commercial use requires explicit permission.
+
+Contact: turelcaccese@gmail.com - turelcaccese.com
