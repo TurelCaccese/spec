@@ -1,24 +1,23 @@
-#  \[README.md\] (English Version) 
+# \[README.md\] (English Version)
 
-#  SPEC Framework ◄ ▲ ◐ ◯ ◑ ▼ ►   
+# SPEC Framework ◄ ▲ ◐ ◯ ◑ ▼ ►
 
-###  Sight | Perception | Exploration | Control 
+### Sight | Perception | Exploration | Control
 
- SPEC  is a perception-driven interaction framework designed to evolve beyond the traditional "verb-based" interface of classic point-and-click or text adventures. Instead of selecting actions from a menu, interaction emerges through player attention and spatial awareness.*
+SPEC is a perception-driven interaction framework designed to evolve beyond the traditional "verb-based" interface of classic point-and-click or text adventures. Instead of selecting actions from a menu, interaction emerges through player attention and spatial awareness.\*
 
- Philosophy:  LOOK → FOCUS → UNLOCK → INTERACT*
+Philosophy: LOOK → FOCUS → UNLOCK → INTERACT\*
 
 ---
 
-##  📖 The Concept 
+## 📖 The Concept
 
-*In SPEC, the player doesn't simply "click" on objects. The player  observes . Interaction is not instantaneous: it requires time (focusing) and spatial consciousness (exploration). If you don't look carefully, the world remains silent.*
+_In SPEC, the player doesn't simply "click" on objects. The player observes . Interaction is not instantaneous: it requires time (focusing) and spatial consciousness (exploration). If you don't look carefully, the world remains silent._
 
-*  S \- Sight:  Directional gaze movement.*  
-*  P \- Perception:  Dynamic sensory feedback based on the framed environment.*  
-*  E \- Exploration:  The requirement to fully scan the environment to unlock advanced states.*  
-*  C \- Control:  Symbolic interaction that appears only after the context is understood.*
-
+- S \- Sight: Directional gaze movement.\*
+- P \- Perception: Dynamic sensory feedback based on the framed environment.\*
+- E \- Exploration: The requirement to fully scan the environment to unlock advanced states.\*
+- C \- Control: Symbolic interaction that appears only after the context is understood.\*
 
 The SPEC Framework is designed for:
 
@@ -40,52 +39,51 @@ The SPEC Framework is designed for:
 
 ---
 
+## 🛠️ Project Architecture
 
+_The framework is currently available in two implementations:_
 
-##  🛠️ Project Architecture 
+### 1\. SPEC for Twine (SugarCube 2\)
 
-*The framework is currently available in two implementations:*
+_Built for deep interactive storytelling. It uses a Hub & Scene system to manage camera movement and player state within Twine passages._
 
-###  1\. SPEC for Twine (SugarCube 2\) 
+- Viewport System: Simulates head movement via CSS `translate3d`.\*
+- Blink Engine: Asynchronous "eyelid" system to enhance physical immersion.\*
+- Symbolic UI: Replaces text links with directional icons and focus nodes.\*
 
-*Built for deep interactive storytelling. It uses a  Hub & Scene  system to manage camera movement and player state within Twine passages.*
+### 2\. SPEC Web Widget (Native HTML/JS)
 
-*  Viewport System:  Simulates head movement via CSS `translate3d`.*  
-*  Blink Engine:  Asynchronous "eyelid" system to enhance physical immersion.*  
-*  Symbolic UI:  Replaces text links with directional icons and focus nodes.*
+_A framework-agnostic version designed for integration into standard websites or WordPress instances._
 
-###  2\. SPEC Web Widget (Native HTML/JS) 
-
-*A framework-agnostic version designed for integration into standard websites or WordPress instances.*
-
-*  Lightweight:  No external dependencies, just Vanilla JavaScript and CSS.*  
-*  Navigation Gate:  Can be used as an interactive header to unlock page content only after the user has explored the scene.*  
-*  Responsive:  Optimized for cinematic layouts (21:9 / 16:4).*
+- Lightweight: No external dependencies, just Vanilla JavaScript and CSS.\*
+- Navigation Gate: Can be used as an interactive header to unlock page content only after the user has explored the scene.\*
+- Responsive: Optimized for cinematic layouts (21:9 / 16:4).\*
 
 ---
 
-##  🕹️ Input System 
+## 🕹️ Input System
 
-*SPEC abandons text commands in favor of a symbolic language:*
+_SPEC abandons text commands in favor of a symbolic language:_
 
-*  ◄ ▲ ▼ ►  : Gaze navigation (Sight).*  
-*  ◯ / ⬢  : Interaction node (appears only after Focus).*  
-*  ◐ ◑  : Peripheral attention indicators.*
+- ◄ ▲ ▼ ► : Gaze navigation (Sight).\*
+- ◯ / ⬢ : Interaction node (appears only after Focus).\*
+- ◐ ◑ : Peripheral attention indicators.\*
 
 ---
 
-##  🚀 Getting Started 
+## 🚀 Getting Started
 
-###  For Twine Users: 
+### For Twine Users:
 
-1. *Download `SPEC_Prototype.twee` or copy the CSS/JS into your SugarCube story.*  
-2. *Configure your viewport in the `StoryCaption` passage or a dedicated widget.*  
-3. *Use the `checkAllVisited()` logic to handle narrative unlocks.*
+1. _Download `SPEC_Prototype.twee` or copy the CSS/JS into your SugarCube story._
+2. _Configure your viewport in the `StoryCaption` passage or a dedicated widget._
+3. _Use the `checkAllVisited()` logic to handle narrative unlocks._
 
-###  For Web/WordPress Integration: 
-1. *Include the `spec-widget-container` div in your HTML.*  
-2. *Customize the background image (panoramic scene).*  
-3. *Set up JS triggers to reveal the rest of your site upon scan completion.*
+### For Web/WordPress Integration:
+
+1. _Include the `spec-widget-container` div in your HTML._
+2. _Customize the background image (panoramic scene)._
+3. _Set up JS triggers to reveal the rest of your site upon scan completion._
 
 ---
 
@@ -100,24 +98,62 @@ Images are available in the /img folder of this repository
 SPEC Framework is licensed under
 CC BY-NC 4.0.
 
- Free for non-commercial use.  Commercial use requires explicit permission from the author.*
+Free for non-commercial use. Commercial use requires explicit permission from the author.\*
 
-*© 2026 Andrea Turel Caccese.*
+https://creativecommons.org/licenses/by-nc/4.0/
+
+_© 2026 Andrea Turel Caccese._
 
 ---
 
-##  🔗 Links 
+## 🔗 Links
 
-*  Live Demo:  (Coming soon) 
-*  Prototype:  (Coming soon)
+- Live Demo: (Coming soon) \[Insert your GitHub Pages link here\]\*
+- Prototype: (Coming soon)\[Insert your Itch.io link here\]\*
 
 ---
 
 ## Status
 
-SPEC is currently in active early development.
+Current Status
 
-Features and architecture may change significantly between versions.
+Version: Alpha v0.1
+
+First public impementation on blogspot as html extension for the blog.
+
+https://www.turelcaccese.com/
+
+Current Features:
+Interactive camera system
+Multiple camera nodes (Left, Up, Focus A, Focus B, Down, Right)
+Automatic Desktop / Mobile aspect ratio
+Smooth camera transitions
+CRT channel switching effects
+Idle camera movement
+Scene memory
+Unlock system
+Sequential scene navigation
+Per-scene contextual text
+Hidden Konami Code prototype
+Roadmap
+Scene-specific camera coordinates
+Audio layer
+Modular SPEC engine
+External JSON scene loading
+Save / Restore state
+Branching exploration
+Dynamic overlays
+Public API
+License
+
+Prototype currently under active development.
+
+© Andrea Turel Caccese
+
+⚠️ STATUS: ALPHA
+
+This project is under active development.
+Features and APIs may change without notice.
 
 ---
 
@@ -130,12 +166,11 @@ Features and architecture may change significantly between versions.
 
 ---
 
-
 ## Versions
 
 Current Version: Pre-Alpha (May 2026)
 
-###  Roadmap 
+### Roadmap
 
 - [ ] Dynamic Soundscape implementation based on camera panning
 - [ ] Image multi canvas / Passages
@@ -144,4 +179,3 @@ Current Version: Pre-Alpha (May 2026)
 - [ ] 3-4 layers movements
 - [ ] Accelerometer support for gaze control (Mobile-ready)
 - [ ] Official WordPress Plugin
-
