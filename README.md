@@ -132,6 +132,8 @@ First public impementation on blogspot as html extension for the blog.
 
 https://www.turelcaccese.com/
 
+**Header Blogspot.html** available in **examples** folder
+
 Current Features:
 Interactive camera system
 Multiple camera nodes (Left, Up, Focus A, Focus B, Down, Right)
