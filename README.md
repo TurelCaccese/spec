@@ -79,7 +79,7 @@ _SPEC abandons text commands in favor of a symbolic language:_
 2. _Configure your viewport in the `StoryCaption` passage or a dedicated widget._
 3. _Use the `checkAllVisited()` logic to handle narrative unlocks._
 
-### For Web/WordPress Integration:
+### For Web/WordPress/Blogspot Integration:
 
 1. _Include the `spec-widget-container` div in your HTML._
 2. _Customize the background image (panoramic scene)._
@@ -89,7 +89,7 @@ _SPEC abandons text commands in favor of a symbolic language:_
 
 ## Screenshots
 
-Images are available in the /img folder of this repository
+Images are available in the /docs folder of this repository
 
 ---
 
@@ -115,9 +115,18 @@ _© 2026 Andrea Turel Caccese._
 
 ## Status
 
-Current Status
+> ⚠️ **STATUS: ALPHA (v0.3)**
+> Core logical structures, input combinations, and spatial coordinate states are stable. 
 
-Version: Alpha v0.1
+### Current Features (Alpha v0.3)
+* [x] Three-dimensional image depth mechanics using multi-axis ($X, Y, Z$) translation layers.
+* [x] Refactored input engine with multi-input combination support.
+* [x] Production-ready Konami Code engine and state logic.
+* [x] Interactive multi-node camera system (Left, Up, Focus A, Focus B, Down, Right)
+* [x] Smooth CSS-driven camera transitions & idle ambient movement.
+* [To do] Adaptive Desktop / Mobile aspect ratio handling.
+* [x] CRT channel-switching simulation.
+* [x] Sequential scene navigation & spatial memory lock/unlock mechanics.
 
 First public impementation on blogspot as html extension for the blog.
 
